@@ -98,3 +98,157 @@
 [12-May-2021 21:19:40 UTC] PHP Notice:  Undefined property: stdClass::$email_notifications_is_enabled in /home/siteiptv/gestorlite.com/status/themes/altum/views/partials/plans.php on line 231
 [12-May-2021 21:19:40 UTC] PHP Notice:  Undefined property: stdClass::$api_is_enabled in /home/siteiptv/gestorlite.com/status/themes/altum/views/partials/plans.php on line 245
 [12-May-2021 21:19:40 UTC] PHP Notice:  Undefined property: stdClass::$api_is_enabled in /home/siteiptv/gestorlite.com/status/themes/altum/views/partials/plans.php on line 251
+[08-Jan-2023 05:13:11 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'siteiptv_status'@'localhost' (using password: YES) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 16
+[08-Jan-2023 05:13:11 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:13:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:13:11 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:13:11 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:13:11 Europe/Berlin] PHP   4. mysqli->__construct($host = 'localhost', $user = 'siteiptv_status', $password = 'kUKI{+*J4H$i', $database = 'siteiptv_status') C:\xampp\htdocs\awgestor\status\app\core\Database.php:16
+[08-Jan-2023 05:15:17 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'siteiptv_status'@'localhost' (using password: YES) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 16
+[08-Jan-2023 05:15:17 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:15:17 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:15:17 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:15:17 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:15:17 Europe/Berlin] PHP   4. mysqli->__construct($host = 'localhost', $user = 'siteiptv_status', $password = 'kUKI{+*J4H$i', $database = 'siteiptv_status') C:\xampp\htdocs\awgestor\status\app\core\Database.php:16
+[08-Jan-2023 05:15:36 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'siteiptv_gestorlite'@'localhost' (using password: NO) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 16
+[08-Jan-2023 05:15:36 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:15:36 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:15:36 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:15:36 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:15:36 Europe/Berlin] PHP   4. mysqli->__construct($host = 'localhost', $user = 'siteiptv_gestorlite', $password = '', $database = 'siteiptv_gestorlite') C:\xampp\htdocs\awgestor\status\app\core\Database.php:16
+[08-Jan-2023 05:16:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:16:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:16:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:16:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP Warning:  Use of undefined constant DATABASE_SERVER - assumed 'DATABASE_SERVER' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 13
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP Warning:  Use of undefined constant DATABASE_USERNAME - assumed 'DATABASE_USERNAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 14
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP Warning:  Use of undefined constant DATABASE_PASSWORD - assumed 'DATABASE_PASSWORD' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 15
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP Warning:  Use of undefined constant DATABASE_NAME - assumed 'DATABASE_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 16
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:16:49 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Este host n�o � conhecido.  in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 16
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP   4. mysqli->__construct($host = 'DATABASE_SERVER', $user = 'DATABASE_USERNAME', $password = 'DATABASE_PASSWORD', $database = 'DATABASE_NAME') C:\xampp\htdocs\awgestor\status\app\core\Database.php:16
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Este host n�o � conhecido.  in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 16
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:16:51 Europe/Berlin] PHP   4. mysqli->__construct($host = 'DATABASE_SERVER', $user = 'DATABASE_USERNAME', $password = 'DATABASE_PASSWORD', $database = 'DATABASE_NAME') C:\xampp\htdocs\awgestor\status\app\core\Database.php:16
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP Warning:  Use of undefined constant DATABASE_SERVER - assumed 'DATABASE_SERVER' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 13
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP Warning:  Use of undefined constant DATABASE_USERNAME - assumed 'DATABASE_USERNAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 14
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP Warning:  Use of undefined constant DATABASE_PASSWORD - assumed 'DATABASE_PASSWORD' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 15
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP Warning:  Use of undefined constant DATABASE_NAME - assumed 'DATABASE_NAME' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 16
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:17:05 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Este host n�o � conhecido.  in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 16
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP   4. mysqli->__construct($host = 'DATABASE_SERVER', $user = 'DATABASE_USERNAME', $password = 'DATABASE_PASSWORD', $database = 'DATABASE_NAME') C:\xampp\htdocs\awgestor\status\app\core\Database.php:16
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Este host n�o � conhecido.  in C:\xampp\htdocs\awgestor\status\app\core\Database.php on line 16
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP Stack trace:
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\awgestor\status\index.php:0
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP   2. Altum\App->__construct() C:\xampp\htdocs\awgestor\status\index.php:11
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP   3. Altum\Database\Database::initialize() C:\xampp\htdocs\awgestor\status\app\core\App.php:14
+[08-Jan-2023 05:17:08 Europe/Berlin] PHP   4. mysqli->__construct($host = 'DATABASE_SERVER', $user = 'DATABASE_USERNAME', $password = 'DATABASE_PASSWORD', $database = 'DATABASE_NAME') C:\xampp\htdocs\awgestor\status\app\core\Database.php:16
+[08-Jan-2023 05:17:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:17:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:17:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:17:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:17:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:17:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:17:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19
+[08-Jan-2023 05:17:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in C:\xampp\htdocs\awgestor\status\app\models\Settings.php:19
+Stack trace:
+#0 C:\xampp\htdocs\awgestor\status\app\core\App.php(41): Altum\Models\Settings->get()
+#1 C:\xampp\htdocs\awgestor\status\index.php(11): Altum\App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\awgestor\status\app\models\Settings.php on line 19

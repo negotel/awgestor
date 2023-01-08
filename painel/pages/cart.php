@@ -5,7 +5,7 @@
   }
 
   if(isset($_SESSION['pre_cadastro'])){
-    echo '<script>location.href="<?=SET_URL_PRODUCTION?>/painel/pagamentos";</script>';
+    echo '<script>location.href='.SET_URL_PRODUCTION.'"/painel/pagamentos";</script>';
   }
 
   $gestor_class = new Gestor();

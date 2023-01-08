@@ -1,7 +1,7 @@
 <?php
 
   @session_start();
-
+require_once "../config/settings.php";
   $json = new stdClass();
   $teste_free = true;
 
@@ -111,7 +111,7 @@
               
               
              $idU     = $return->id;
-             $idPlano = 6;
+             $idPlano = 1;
 
              $timestamp      = strtotime('+5 days',strtotime(date('d-m-Y')));
              $novoVencimento = date('d/m/Y', $timestamp);
