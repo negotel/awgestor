@@ -9,7 +9,6 @@ $chatbot = new ChatBot();
 $getChatbot = $chatbot->getchatbotByUser($user->id);
 
 
-
 if ($getChatbot) {
     $chats = $chatbot->get_chats_messages($getChatbot->keychat);
 }
@@ -231,7 +230,8 @@ if ($getChatbot) {
                             </li>
 
                             <li>
-                                No campo que diz Server URL, coloque o seguinte link: <b class="text-info"><?=SET_URL_CHATBOT?>util/b/m.php?key=<?= $user->id; ?></b>
+                                No campo que diz Server URL, coloque o seguinte link: <b
+                                        class="text-info"><?= SET_URL_CHATBOT ?>util/b/m.php?key=<?= $user->id; ?></b>
                             </li>
                             <br/>
                             <li>
@@ -276,7 +276,7 @@ if ($getChatbot) {
         var jsonChat = $("#json_" + chat).val();
         $.post('../control/control.organizechat.php', {messages: jsonChat, name: name}, function (data) {
             if (data == "") {
-                $(".msger-chat").html('<center><img width="300" src="<?=SET_URL_PRODUCTION?>/painel/img/robot_default.png" /></center>');
+                $(".msger-chat").html('<center><img width="300" src="<?=SET_URL_PRODUCTION?>/img/robot_default.png" /></center>');
             } else {
                 $(".msger-chat").html(data);
             }

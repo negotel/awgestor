@@ -6,7 +6,7 @@
  /*Organize chat messages*/
  
     @session_start();
-    
+require_once "../config/settings.php";
     require_once '../class/Conn.class.php';
     require_once '../class/User.class.php';
     
