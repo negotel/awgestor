@@ -11,34 +11,34 @@ require_once "../config/settings.php";
 
 $KEYSECRET_RECAPTCHA = "6LdlwbEaAAAAAMeB5rgyitMHi3R3vn6cmUust5xD";
 
-if (isset($_POST['token'])) {
-    $captcha_data = $_POST['token'];
-    $continue = true;
-
-    $resposta = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $KEYSECRET_RECAPTCHA . "&response=" . $captcha_data . "&remoteip=" . $_SERVER['REMOTE_ADDR']));
-
-    if ($resposta->success) {
-        $continue = true;
-    } else {
-
-        $data = new stdClass();
-        $data->erro = true;
-        $data->msg = "reCaptcha incorreto";
-
-        return json_encode($data);
-        exit();
-    }
-
-
-} else {
-    $data = new stdClass();
-    $data->erro = true;
-    $data->msg = "Complete o reCaptcha";
-
-    return json_encode($data);
-    exit();
-
-}
+//if (isset($_POST['token'])) {
+//    $captcha_data = $_POST['token'];
+//    $continue = true;
+//
+//    $resposta = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $KEYSECRET_RECAPTCHA . "&response=" . $captcha_data . "&remoteip=" . $_SERVER['REMOTE_ADDR']));
+//
+//    if ($resposta->success) {
+//        $continue = true;
+//    } else {
+//
+//        $data = new stdClass();
+//        $data->erro = true;
+//        $data->msg = "reCaptcha incorreto";
+//
+//        return json_encode($data);
+//        exit();
+//    }
+//
+//
+//} else {
+//    $data = new stdClass();
+//    $data->erro = true;
+//    $data->msg = "Complete o reCaptcha";
+//
+//    return json_encode($data);
+//    exit();
+//
+//}
 
 
 if (isset($_POST['email']) && isset($_POST['senha'])) {
@@ -83,13 +83,8 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
 
                 $_SESSION['GESTOR']['plano'] = $obj->id_plano;
             }
-
-
         }
-
-
         echo $log;
-
     }
 
 
