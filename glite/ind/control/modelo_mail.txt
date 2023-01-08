@@ -1,0 +1,10 @@
+Olá {nome_cliente} ! Fico tão feliz em ter você por aqui.
+
+Você criou sua conta, e aqui está sua senha ;) !
+
+Senha: {senha} 
+
+Você pode acessar a área do cliente na hora que desejar através deste link:
+{link_panel}
+
+Obrigado !

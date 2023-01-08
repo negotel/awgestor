@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gestor Lite</title>
+  
+  <style type="text/css">
+    body{
+      margin:0;
+      padding:0;
+      font-family:arial;
+    }
+
+    a{
+      text-decoration:none;
+      color:#0dc0e8;
+    }
+
+   .container{
+     margin-top:20px!important;
+     width:60%;
+     margin: 0 auto;
+     background-color: #fbfbfb;
+   }
+
+   @media screen and (max-width:400px) {
+     .container{
+       margin-top:20px!important;
+       width:100%;
+       margin: 0 auto;
+     }
+  }
+  
+  
+  
+  @media screen and (max-width:600px) {
+     .container{
+       margin-top:20px!important;
+       width:90%;
+       margin: 0 auto;
+     }
+  }
+  
+   @media screen and (max-width:800px) {
+     .container{
+       margin-top:20px!important;
+       width:80%;
+       margin: 0 auto;
+     }
+  }
+
+  .div-head{
+    width:100%;
+    background:#7922ff;
+    min-height:50px;
+    text-aling:center;
+    -webkit-border-top-left-radius: 50px;
+    -webkit-border-top-right-radius: 50px;
+    -moz-border-radius-topleft: 50px;
+    -moz-border-radius-topright: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .div-head img{
+    width:20%;
+  }
+
+  .div-body{
+    padding:10px;
+    color:#5c5e67;
+    font-size:25px;
+    margin-top:20px;
+  }
+
+  .code_confirm{
+    width:40%;
+    margin:0 auto;
+
+  }
+
+  .code_confirm .num{
+    margin:2px;
+    padding:6px;
+    background-color:#c9cac8;
+    color:#7922ff;
+    font-size:30px;
+  }
+
+  .info_adicional{
+      font-style: italic;
+      font-size: 15px;
+      color: #8c8a8a;
+      margin-top: 62px;
+      position: relative;
+      display: block;
+  }
+
+  .div-footer{
+    width:100%;
+    background:#7922ff;
+    min-height:100px;
+    color:#fff;
+    margin-top:30px;
+    font-style: italic;
+  }
+
+  .div-footer .copy{
+    width:40%;
+    padding:10px;
+    float:left;
+  }
+
+  .div-footer .social{
+    width:50%;
+    padding:10px;
+    float:right;
+  }
+
+ .social ul{
+   list-style:none;
+
+ }
+
+ .social ul li {
+    float: left;
+    margin:5px;
+  }
+
+  .social img{
+    width:30px;
+  }
+
+  </style>
+  </head>
+  <body>
+    <div class="container">
+       <div class="div-head">
+          <center><img src="<?=SET_URL_PRODUCTION?>/painel/img/logo-gestor-lite_dark_on.png" alt=""></center>
+       </div>
+       <div class="div-body" >
+          <center>
+            <p>
+              Oi {name}! Tudo bem? 💜 Para confirmar seu email no painel Gestor Lite. Utilize o código abaixo:
+            </p>
+          </center>
+          <center>
+            <span class="code_confirm" >
+              <!-- <span class="num" >2</span>
+              <span class="num" >4</span>
+              <span class="num" >6</span>
+              <span class="num" >0</span>
+              <span class="num" >1</span> -->
+              {codigo}
+            </span>
+            <br />
+            <span class="info_adicional" >
+              Caso desconheça este email, desconcidere-o.
+            </span>
+
+          </center>
+       </div>
+       <div class="div-footer">
+           <div class="copy">
+              <p>
+                Gestor Lite &copy; 2021 <br />
+                Gerenciamento de clientes <br />
+                <a href="https://www.gestorlite.com">www.gestorlite.com</a>
+              </p>
+           </div>
+           <div class="social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/gestorliteoficial"><img src="<?=SET_URL_PRODUCTION?>/painel/img/social/facebook.png" alt=""></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/gestorlite/"><img src="<?=SET_URL_PRODUCTION?>/painel/img/social/instagram.png" alt=""></a>
+              </li>
+              <li>
+                <a href="<?=SET_URL_PRODUCTION?>/faq?wpp"><img src="<?=SET_URL_PRODUCTION?>/painel/img/social/whatsapp.png" alt=""></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCPJ7L33FkMayMW6EExnXCkw"><img src="<?=SET_URL_PRODUCTION?>/painel/img/social/youtube.png" alt=""></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/gestorlite/"><img src="<?=SET_URL_PRODUCTION?>/painel/img/social/linkedin.png" alt=""></a>
+              </li>
+            </ul>
+           </div>
+       </div>
+    </div>
+  </body>
+</html>

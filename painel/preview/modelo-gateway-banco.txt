@@ -1,0 +1,31 @@
+<p style="text-align: center;">REALIZA A TRANSFER&Ecirc;NCIA DE <strong>R$</strong> <strong>{valor}</strong> PARA QUALQUER UMA DAS CONTAS ABAIXO.</p>
+<p style="text-align: center;">EM SEGUIDA ENVIE O COMPROVANTE: WHATSAPP 11 9 99999999 (SEU WHATS)</p>
+<table style="border-collapse: collapse; width: 98.2966%;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">
+<p><img src="https://logodownload.org/wp-content/uploads/2019/08/nubank-logo.png" alt="" width="170" height="72" /></p>
+<ul>
+<li style="text-align: justify;">Banco: <strong>260</strong> Nu Pagamentos S.A. (Nubank)</li>
+<li style="text-align: justify;">Ag&ecirc;ncia: <strong>0001</strong></li>
+<li style="text-align: justify;">Conta: <strong>0000000-0</strong></li>
+<li style="text-align: justify;">Titular:<strong> Daenerys Targaryen<br /></strong></li>
+<li style="text-align: justify;">CPF:<strong> 000.000.000-00</strong></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSd6OFHOHPEcjBvJr1os0q5I2h_3KexsA6zwg&amp;usqp=CAU" alt="" width="195" height="102" /></p>
+<ul>
+<li style="text-align: justify;">Banco: <strong>341</strong> Ita&uacute; Unibanco S.A. (Ita&uacute;)</li>
+<li style="text-align: justify;">Ag&ecirc;ncia: <strong>0001</strong></li>
+<li style="text-align: justify;">Conta: <strong>0000000-0</strong></li>
+<li style="text-align: justify;">Titular:<strong> Daenerys Targaryen<br /></strong></li>
+<li style="text-align: justify;">CPF:<strong> 000.000.000-00</strong></li>
+</ul>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>

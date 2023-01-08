@@ -1,0 +1,5 @@
+[18-Jul-2022 15:24:48 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/siteiptv/gestorlite.com/system_acess/home.php on line 280
+[18-Jul-2022 15:24:57 America/Sao_Paulo] PHP Notice:  Undefined variable: user1 in /home/siteiptv/gestorlite.com/class/Comprovantes.class.php on line 162
+[19-Jul-2022 14:49:12 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/siteiptv/gestorlite.com/system_acess/home.php on line 280
+[19-Jul-2022 14:51:13 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/siteiptv/gestorlite.com/system_acess/home.php on line 280
+[20-Jul-2022 15:31:46 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/siteiptv/gestorlite.com/system_acess/home.php on line 280

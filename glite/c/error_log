@@ -1,0 +1,10 @@
+[18-Jul-2022 16:46:38 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on bool in /home/siteiptv/gestorlite.com/class/Comprovantes.class.php:344
+Stack trace:
+#0 /home/siteiptv/gestorlite.com/glite/c/index.php(24): Comprovantes->uploadComp(Array, Array, '../../comprovan...', Object(stdClass), Object(Whatsapi))
+#1 {main}
+  thrown in /home/siteiptv/gestorlite.com/class/Comprovantes.class.php on line 344
+[18-Jul-2022 16:48:50 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on bool in /home/siteiptv/gestorlite.com/class/Comprovantes.class.php:344
+Stack trace:
+#0 /home/siteiptv/gestorlite.com/glite/c/index.php(24): Comprovantes->uploadComp(Array, Array, '../../comprovan...', Object(stdClass), Object(Whatsapi))
+#1 {main}
+  thrown in /home/siteiptv/gestorlite.com/class/Comprovantes.class.php on line 344

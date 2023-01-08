@@ -1,0 +1,15 @@
+<p style="text-align: center;">Utilize o QR Code abaixo para realizar o pagamento do seu pedido.</p>
+<p style="text-align: left;"><strong>COMO REALIZAR O PAGAMENTO</strong>:</p>
+<ol>
+<li style="text-align: left;">Abra o APP do PicPay.</li>
+<li style="text-align: left;">Clique no &iacute;cone do QR code que fica no canto superior esquerdo da tela, ao lado do saldo.</li>
+<li style="text-align: left;">Aponte a c&acirc;mera para o c&oacute;digo QR abaixo.</li>
+<li style="text-align: left;">Informe o valor total da compra. <strong>{valor}</strong></li>
+<li style="text-align: left;">Realize o pagamento utilizando as op&ccedil;&otilde;es que aparecem no APP.</li>
+<li style="text-align: left;">Tire um print (screenshot) da tela de pagamento confirmado.</li>
+<li style="text-align: left;">Enviei o comprovante 11 9 99999999 (SEU WHATS)</strong></li>
+</ol>
+<p style="text-align: center;"><span style="text-decoration: underline;"><strong>(Troque por seu qrcode picpay)</strong></span></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="preview/imgs/qrcode-picpay-example.png" alt="" width="219" height="219" /></p>
+<p style="text-align: center;">@seuUsuariopicpay</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://uploaddeimagens.com.br/images/002/052/653/full/321321.png?1555820779" alt="" width="598" height="390" /></p>

@@ -1,0 +1,1 @@
+a:6:{s:1:"k";s:121:"s_monitor_logs?monitor_id=1&start_datetime=56dd78b45e34cab4d3e76af1b43e9557&end_datetime=4e330c70e3fe6e23aa61c80acc92e076";s:1:"d";a:0:{}s:1:"g";a:1:{i:0;s:12:"monitor_id=1";}s:1:"e";O:8:"DateTime":3:{s:4:"date";s:26:"2021-05-13 12:39:03.039442";s:13:"timezone_type";i:3;s:8:"timezone";s:3:"UTC";}s:1:"m";N;s:1:"c";N;}

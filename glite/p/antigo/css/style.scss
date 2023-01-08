@@ -1,0 +1,508 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+
+
+p, a {
+  color: #fff;
+}
+
+
+.ticket {
+    backface-visibility: hidden;
+    transform-origin: 50% 50%;
+    top: 50%;
+    left: 55%;
+    margin-left: -144px;
+    position: absolute;
+    display: inline-block;
+    padding: 15px 25px;
+    background-image:
+        radial-gradient( ellipse closest-side at 50%  50%, hsla(0, 0%, 100%, 0.10), transparent 90%),
+        radial-gradient( circle at 0    100%, transparent 14px, #770ac1 15px),
+        radial-gradient( circle at 100% 100%, transparent 14px, #770ac1 15px),
+        radial-gradient( circle at 100% 0, transparent 14px, #770ac1 15px),
+        radial-gradient( circle at 0    0, transparent 14px, #770ac1 15px);
+    background-position: center center, bottom left, bottom right, top right, top left;
+    background-size: cover, 51% 51%, 51% 51%, 51% 51%, 51% 51%;
+    background-repeat: no-repeat;
+    border-width: 0 4px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: radial-gradient(cover circle, #770ac1 0%, #770ac1 50%, transparent 51%) 0 39% / 15px 4px repeat;
+    -webkit-filter: drop-shadow(hsla(0, 0%, 0%, 0.55) 1px 1px 2px);
+}
+
+.ticket + .ticket {
+    transform: rotate(-7deg) translateY(-25%) translateX(10px) translateZ(0);
+    z-index: 1;
+}
+
+.ticket > div {
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+    position:relative;
+    border-color: #b13fff;
+    border-style: solid;
+    border-width: 2px;
+    border-radius:5px;
+    text-align:center;
+    font: 2em/1 Impact;
+    text-transform:uppercase;
+    padding:15px;
+    font-stretch: extra-expanded;   
+}
+
+.ticket > div:before,
+.ticket > div:after {
+    content: attr(data-number);
+    font: .625em/1 'Courier New';
+    position: absolute;
+    width: 96px;
+    line-height: 28px;
+    transform: rotate(90deg) translateZ(0) ;
+    transform-origin: 0% 0%;
+    text-align:center;
+    display: block;     
+    top: 0;
+
+    border-style: solid;
+    border-width: 2px 0 0;
+}
+
+.ticket > div:before {
+    left: 28px;
+}
+
+.ticket > div:after {
+    transform-origin: 100% 0%;
+    right: 28px;
+    transform: rotate(-90deg) translateZ(0);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+.img_btn {
+  display: inline-block;
+  width: 30%!important;
+}
+
+select,
+input {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+button {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.product {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 15px;
+}
+
+.product__details {
+  padding: 30px 25px;
+  background-color: #012f43;
+  color: #fff;
+}
+
+.product__details-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #b30bff;
+}
+
+.product__details-sub-heading {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.card-details {
+  position: relative;
+  padding: 25px;
+  background: -webkit-gradient(linear, left top, right top, from(#013552), to(#00324e));
+  background: linear-gradient(to right, #013552 0%, #00324e 100%);
+  color: #fff;
+}
+
+.card-details__fieldset {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+.card-details__heading {
+  display: block;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
+.card-details__cards {
+  display: -webkit-box;
+  margin-top: 20px;
+  
+}
+
+.card-details__cards-item {
+  position: relative;
+  width: 18%;
+  max-width: 53px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right:20px!important;
+}
+
+.card-details__card-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  z-index: 1;
+}
+
+.card-details__card-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  z-index: 0;
+}
+
+.card-details__cards-image {
+  border-radius: 5px;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.card-details__number {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  margin-top: 15px;
+}
+
+.card-details__number-field {
+  position: relative;
+  width: 15%;
+}
+
+.card-details__number-card {
+  width: 14%;
+  margin-left: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-details__number-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  clip: rect(0, 0, 0);
+}
+
+.card-details__number-input,
+.card-details__expiration-date-input,
+.card-details__security-code-input {
+  
+  padding-bottom: 5px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1em;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+}
+.card-details__number-input:focus, .card-details__number-input:active, .card-details__number-input--valid,
+.card-details__expiration-date-input:focus,
+.card-details__expiration-date-input:active,
+.card-details__expiration-date-input--valid,
+.card-details__security-code-input:focus,
+.card-details__security-code-input:active,
+.card-details__security-code-input--valid {
+  color: #800ff0;
+  border-bottom: 2px solid #800ff0;
+}
+
+.card-details__holder {
+  position: relative;
+  margin-top: 10px;
+}
+
+.card-details__holder-label,
+.card-details__expiration-date-label,
+.card-details__security-code-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  clip: rect(0, 0, 0);
+}
+
+.card-details__holder-input {
+  width: 100%;
+  padding-bottom: 5px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1em;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.card-details__holder-input:focus, .card-details__holder-input:active, .card-details__holder-input--valid {
+  color: #800ff0;
+  border-bottom: 2px solid #800ff0;
+}
+
+.card-details__expiration,
+.card-details__security {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-details__expiration {
+  margin-right: 20px;
+}
+
+.card-details__expiration-date {
+  position: relative;
+  max-width: 80px;
+  margin-top: 15px;
+}
+
+.card-details__details__security-code {
+  position: relative;
+  max-width: 29px;
+  margin-top: 15px;
+}
+
+.card-details__submit {
+  display: block;
+  width: 100%;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 16px 35px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.product__details-basket {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.product__details-basket-heading {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95em;
+}
+.product__details-basket-heading--right {
+  text-align: right;
+}
+
+.product__details-basket-quantity-wrapper {
+  position: relative;
+  background-color: #013552;
+}
+.product__details-basket-quantity-wrapper:before {
+  content: '\203A';
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.8em;
+  -webkit-transform: rotate(90deg) translateY(-50%);
+          transform: rotate(90deg) translateY(-50%);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.product__details-basket-quantity {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  margin: 0;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 1em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  z-index: 1;
+}
+
+.product__details-basket-price {
+  display: block;
+  color: #800ff0;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 40em) {
+  html,
+  body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product__details-heading {
+    font-size: 1.7em;
+  }
+
+  .card-details {
+    padding-right: 50px;
+    padding-bottom: 35px;
+    padding-left: 50px;
+  }
+
+  .card-details__holder {
+    width: calc(80% - 10px);
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 47.938em) {
+
+
+
+  .product {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+
+	
+  .product__details {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    -webkit-box-flex: 1;
+            flex: 1;
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+	height: 400px;
+  }
+
+  .product__details-sub-heading {
+    margin-bottom: 60px;
+  }
+
+  .product__details-image-wrapper {
+    position: relative;
+    margin-bottom: 40%;
+  }
+
+  .product__details-image {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .card-details {
+    width: 450px;
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.35);
+  }
+
+  .card-details__submit {
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+    width: auto;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.35);
+  }
+
+  .card-details__fieldset:last-of-type {
+    margin-bottom: 0;
+  }
+}

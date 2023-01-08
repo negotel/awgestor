@@ -1,0 +1,16 @@
+👋 Olá {nome}. Você gerou um teste em nosso site.
+Fico muito feliz em ver que você se interessa em nossos produtos.
+
+*Aqui está seu teste* 👇
+Usuário: {username}
+Senha: {password}
+
+💬 Seu teste tem duração de 2 horas
+
+Aplicativo:
+https://linkapp.com
+
+Caso você goste do nosso produto, pode contratar por este link:
+https://example.com/
+
+*Está mensagem é automática*

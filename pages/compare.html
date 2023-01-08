@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+   </head>
+   <body style="height:1000px">
+      <style>
+         h5.package {
+         background:#c8c8c8;
+         cursor:pointer;
+         color:#000a47;
+         padding:3em 20px;
+         font-size:22px;
+         margin: 0 0 23px;
+         }
+         .active h5 {
+         background:#6927ff;
+         }
+         .desktop {
+         text-align:right;
+         margin:0; 
+         padding:0
+         }
+         .comparison-price {
+         font-weight:700!important;
+         font-size:2.2rem;
+         margin:0;
+         padding:0!important;
+         color:#5f6376;
+         }
+         .per-week {
+         margin:0 0 30px;
+         padding:0 0 2em;
+         color: #5f6376;
+         }
+         .active .comparison-price, .active .per-week {
+         color:#6927ff;
+         }
+         .table-feature {
+         margin:0 0 20px;
+         }
+         .comparison-header {
+         position:sticky;
+         position:-webkit-sticky;
+         top:0
+         }
+         .comparison-table {
+         width:100%;
+         text-align:center;
+         vertical-align:middle;
+         font-family: 'tahoma';
+         }
+         .comparison-table p {
+         padding: 0 10px;
+         }
+         .comparison-table-row {
+         margin-bottom:0%;
+         }
+         .comparison-table-row:nth-child(odd) {
+         background: #EDEDED!important;
+         } 
+         .comparison-table-row:nth-child(even) {
+         background: #FFFFFF!important;
+         }  
+         .per-week {
+         font-size:.8rem;
+         margin-top:0;
+         }
+         .flex-table {
+         display:flex;
+         align-items:center;
+         justify-content:center;
+         }
+         p.desktop {
+         padding: 0 6px;
+         }
+         .arrow .active {
+         border-left:50px solid transparent;
+         border-right:50px solid transparent;
+         border-top:30px solid #6927ff;
+         width:0;
+         height:0;
+         margin: 0 auto;
+         position:relative;
+         top:-24px;
+         }
+         .fa-check {
+         color:#5f6376;
+         font-size:20px;
+         font-weight:900;
+         margin:0 0 20px;
+         }
+         .fa-times { 
+         color:#5f6376;
+         margin:0 0 20px;
+         }
+         .active .fa-check {
+         color:#05b142;
+         }
+         .active .fa-times {
+         color:#5f6376;
+         }
+         .titleTwo .fas { 
+         padding-left:12px;
+         }
+         .titleThree .fas {
+         padding-left:22px;
+         }
+         @media only screen and (max-width:780px) {
+         body {
+         width:100%;
+         margin:0 auto;
+         }
+         .comparison-column {
+         width:32%;
+         display:inline-block;
+         }
+         .desktop {
+         display:none;
+         }
+         .centre { 
+         border-left:solid 1px rgba(255,255,255,.2);
+         border-right:solid 1px rgba(255,255,255,.2);
+         }
+         h4 {
+         padding-top:10%;
+         margin-bottom:0;
+         }
+         h5,p {
+         font-size:.8rem;
+         }
+         h5.mobile {
+         padding-top:25px;
+         padding-bottom:25px
+         }
+         }
+         @media only screen and (min-width:780px) {
+         .mobile {
+         display:none;
+         }
+         .comparison-column {
+         width:24%;
+         display:inline-block;
+         }
+         .comparison-table-row {
+         border-bottom:solid 1px rgba(255,255,255,.2);
+         }
+         .comparison-price { 
+         padding-top:10%;
+         padding-bottom:10%
+         }
+         .title {
+         height:125px;
+         }
+         .title h5 {
+         margin-top:30px;
+         font-size:1.1rem
+         }    
+         }
+         @media only screen and (max-width:580px) {
+         .comparison-price {
+         font-size:1em;
+         }
+         }
+         .active .package{
+         color:#FFF!important;
+         }
+         .package{
+         color:#6927ff!important;
+         }
+         .fa-close{
+         color: #f10101!important;
+         font-size: 32px!important;		 
+         }
+         .fa-check{
+         color: #05b142!important;
+         font-size: 32px!important;		 
+         }
+      </style>
+      <link type="text/stylesheet" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+      <link type="text/stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+      <script type="text/javascript">
+         {
+         
+         //gets the element id that was clicked on
+         getId = (el) => {
+             
+             let removeClass, classOne, classTwo;
+         
+             //get element classes
+             let addClass = document.querySelectorAll(`.${el}`);
+             
+                 //function to add class
+                 addClassFunc = () => {
+         
+                     //gets all classes related to the ID that was clicked on e.g. if ID clicked was titleOne then target all titleOne classes
+                     addClass.forEach((el) => {
+                     el.classList.add('active');
+                         });
+                     };
+         
+                 //function to remove active class - if ID clicked was titleOne we target titleTwo and titleThree classes to remove active class
+         
+                 removeClassFunc = () => {
+                     removeClass = document.querySelectorAll(`.${classOne}, .${classTwo}`);
+                     removeClass.forEach((el) => {
+                     el.classList.remove('active');                             
+                         });
+                     };
+         
+                 //finds the columns which we remove active class from 
+                 if (el === 'titleOne') {
+                     classOne = 'titleTwo';
+                     classTwo = 'titleThree';
+                 
+                 } else if (el === 'titleTwo') {
+                     classOne = 'titleOne';
+                     classTwo = 'titleThree';
+         
+                 } else if (el === 'titleThree') {
+                     classOne = 'titleOne';
+                     classTwo = 'titleTwo';
+         
+                 };            
+         
+                 //call functions to remove and add active class
+                 addClassFunc();
+                 removeClassFunc();       
+         };          
+         };
+                             
+                 
+              
+         	
+      </script>
+         <div class="comparison-table">
+            <div class="comparison-header">
+               <div class="comparison-column desktop">
+               </div>
+               <div onclick="getId(id)"  class="comparison-column col-1 header titleOne " id="titleOne"  >
+                  <h5 class="package">Amador</h5>
+               </div>
+               <div onclick="getId(id)" class="comparison-column col-2 header titleTwo active" id="titleTwo">
+                  <h5 class="package">Profissional</span></h5>
+               </div>
+               <div onclick="getId(id)"  class="comparison-column header titleThree" id="titleThree" >
+                  <h5 class="package">Patrão</h5>
+               </div>
+               <div class="comparison-column desktop">       
+               </div>
+               <div class="comparison-column arrow">
+                  <div class=" titleOne"></div>
+               </div>
+               <div class="comparison-column arrow">
+                  <div class="active titleTwo"></div>
+               </div>
+               <div class="comparison-column arrow">
+                  <div class=" titleThree"></div>
+               </div>
+            </div>
+            <!--PRICE-->
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Preço</p>
+               </div>
+               <div class="comparison-column feature-content  titleOne">
+                  <h4 class="comparison-price ">R$ 10,99</h4>
+                  <p class="per-week">por mês</p>
+               </div>
+               <div class="comparison-column feature-content active titleTwo"  >
+                  <h4 class="comparison-price ">R$ 17,00</h4>
+                  <p class="per-week ">por mês</p>
+               </div>
+               <div class="comparison-column feature-content titleThree">
+                  <h4 class="comparison-price ">R$ 50,00</h4>
+                  <p class="per-week ">por mês</p>
+               </div>
+            </div>
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Clientes</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Clientes</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active">
+                  <p>50</p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p>115</p>
+               </div>
+               <div class="comparison-column feature-content titleThree">
+                  <p>Ilimitado</p>
+               </div>
+            </div>
+            <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Whats API</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Whats API</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo" >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Cobrança por email</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Cobrança por email</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title" id="test">Link Whatsapp</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p id="test-1"> Link Whatsapp</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p>1</p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p>5</p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p>10</p>
+               </div>
+            </div>
+            <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Link de pagamento</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Link de pagamento</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            
+            
+            <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Financeiro</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Financeiro</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            
+                 <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Financeiro Avançado</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Financeiro Avançado</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            
+                 <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Faturas de clientes</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Faturas de clientes</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            
+                 <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Área de cliente</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Área de cliente</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            
+                 <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Notify Gestor</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Notify Gestor</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            
+                 <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Gateways de Pagamentos</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Gateways de Pagamentos</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            
+                 <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Criação de Banners</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Criação de Banners</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            
+                 <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Chat Bot</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Chat Bot</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p><i class="fa fa-close" ></i></p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p><i class="fa fa-check" ></i></p>
+               </div>
+            </div>
+            
+                 <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Produtos Digitais</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Produtos Digitais</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p> 0 </p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p>2</p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p>50</p>
+               </div>
+            </div>
+            
+            <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Geração de testes</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Geração de testes</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p>50/mês</p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p>100/mês</p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p>Ilimitado</p>
+               </div>
+            </div>
+            
+              <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Categoria de clientes</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Categoria de clientes</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p>2</p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p>4</p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p>10</p>
+               </div>
+            </div>
+            
+              <!-- To here -->
+            <!--REPEAT ROW - copy from here-->
+            <h5 class="mobile row-title">Geração de testes</h5>
+            <div class="comparison-table-row flex-table" >
+               <div class="comparison-column table-feature desktop row-title" >
+                  <p>Geração de testes</p>
+               </div>
+               <div class="comparison-column feature-content titleOne active" >
+                  <p>50/mês</p>
+               </div>
+               <div class="comparison-column feature-content centre titleTwo">
+                  <p>100/mês</p>
+               </div>
+               <div class="comparison-column feature-content titleThree"   >
+                  <p>Ilimitado</p>
+               </div>
+            </div>
+            
+            
+         </div>
+         <!-- To here -->
+   </body>
+</html>

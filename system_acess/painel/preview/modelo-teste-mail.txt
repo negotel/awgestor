@@ -1,0 +1,20 @@
+<h1 style="text-align: center;">HEY {nome}.. Seu teste 💜 !</h1>
+<p style="text-align: center;">&nbsp;</p>
+<h3 style="text-align: center;">{nome} olha s&oacute; seu teste.</h3>
+<table style="border-collapse: collapse; width: 28.5571%; height: 54px; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">USU&Aacute;RIO</td>
+<td style="width: 50%; text-align: center;">{username}</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">SENHA</td>
+<td style="width: 50%; text-align: center;">{password}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3 style="text-align: center;">Baixe Nosso App por este link:<br /><a href="https://linkapp.com">https://linkapp.com</a></h3>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="<?=SET_URL_PRODUCTION?>/painel/preview/imgs/modelo-img-template-mail.png" alt="" width="217" height="199" /></p>
+<p style="text-align: center;"><img src="<?=SET_URL_PRODUCTION?>/painel/preview/imgs/waves_slidertech2.png" alt="" width="700" height="200" /></p>

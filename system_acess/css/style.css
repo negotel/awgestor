@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:arial;
+}
+
+
+
+body{
+    background-image: url('https://bing.biturl.top/?resolution=1920&format=image&index=0');
+    background-size: cover;
+}
+
+.logo{
+    width:100%;
+    text-align:center;
+}
+
+.logo img{
+    width:300px;
+}
+
+.container{
+    margin: 0 auto;
+    width:40%;
+    
+}
+
+.div-login form{
+    width:100%;
+}
+
+.div-login{
+    padding:30px;
+    background-color:rgba(10,10,10,0.5);
+    margin-top:50px;
+    width:100%;
+    border-radius:10px;
+
+}
+
+.div-login form input{
+    width:53%;
+    height:30px;
+    margin-bottom:5px;
+    padding:5px;
+}
+
+
+.div-login .input .input_submit{
+    width:55%;
+    height:40px;
+    background-color:rgba(227,0,255,1);
+    font-size:20px;
+    color:#fff;
+    cursor:pointer;
+    transition: 0.5s;
+    border: 0;
+}
+
+.div-login .input .input_submit:hover{
+    background: linear-gradient(180deg, rgba(227,0,255,1) 0%, rgba(64,0,255,1) 100%); 
+}
+
+.msg-erro{
+    padding:10px;
+    color:red;
+    width:100%;
+    text-align:center;
+}

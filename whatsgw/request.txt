@@ -1,0 +1,1 @@
+event=phonestate&apikey=af04a023-a3c1-4601-9b45-f9d3de2f071a&phone_number=5519998118417&state=connected&cause=&w_instancia_id=4426&event_time=1658340714

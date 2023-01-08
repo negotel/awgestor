@@ -1,0 +1,74 @@
+[18-Jul-2022 11:55:28 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[18-Jul-2022 11:55:28 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[18-Jul-2022 11:55:29 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[18-Jul-2022 11:56:05 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[18-Jul-2022 11:56:05 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[18-Jul-2022 11:56:05 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[18-Jul-2022 11:56:09 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[18-Jul-2022 11:56:09 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[18-Jul-2022 11:56:09 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 73
+[18-Jul-2022 11:56:14 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[18-Jul-2022 11:56:14 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[18-Jul-2022 11:56:14 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[18-Jul-2022 11:56:14 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[18-Jul-2022 11:56:14 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[18-Jul-2022 11:56:14 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[18-Jul-2022 21:15:57 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[18-Jul-2022 21:15:57 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[18-Jul-2022 21:15:57 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[19-Jul-2022 10:35:26 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[19-Jul-2022 10:35:26 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[19-Jul-2022 10:35:54 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[19-Jul-2022 10:35:54 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[19-Jul-2022 10:53:18 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[19-Jul-2022 10:53:18 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[19-Jul-2022 12:47:39 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[19-Jul-2022 12:50:06 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[19-Jul-2022 12:50:10 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 73
+[19-Jul-2022 12:50:10 America/Sao_Paulo] PHP Notice:  Trying to get property 'nome' of non-object in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 115
+[19-Jul-2022 12:50:10 America/Sao_Paulo] PHP Notice:  Trying to get property 'valor' of non-object in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 119
+[19-Jul-2022 12:50:10 America/Sao_Paulo] PHP Notice:  Trying to get property 'id' of non-object in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 123
+[19-Jul-2022 12:50:10 America/Sao_Paulo] PHP Notice:  Trying to get property 'dias' of non-object in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 126
+[19-Jul-2022 12:50:18 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/profile.php on line 67
+[19-Jul-2022 12:54:23 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[19-Jul-2022 12:54:38 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/profile.php on line 67
+[19-Jul-2022 12:54:44 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 73
+[19-Jul-2022 12:54:44 America/Sao_Paulo] PHP Notice:  Trying to get property 'nome' of non-object in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 115
+[19-Jul-2022 12:54:44 America/Sao_Paulo] PHP Notice:  Trying to get property 'valor' of non-object in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 119
+[19-Jul-2022 12:54:44 America/Sao_Paulo] PHP Notice:  Trying to get property 'id' of non-object in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 123
+[19-Jul-2022 12:54:44 America/Sao_Paulo] PHP Notice:  Trying to get property 'dias' of non-object in /home/siteiptv/gestorlite.com/cliente/pages/planos.php on line 126
+[19-Jul-2022 16:24:31 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[19-Jul-2022 16:24:31 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[19-Jul-2022 16:24:31 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[19-Jul-2022 16:26:44 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[19-Jul-2022 16:26:44 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[19-Jul-2022 16:26:44 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[20-Jul-2022 14:30:18 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[20-Jul-2022 14:30:19 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[20-Jul-2022 15:01:24 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:01:24 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:01:45 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:01:45 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:01:50 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:01:50 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:31:22 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:31:22 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:31:22 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[20-Jul-2022 15:31:58 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:31:58 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:31:58 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[20-Jul-2022 15:32:07 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:32:07 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:32:07 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[20-Jul-2022 15:32:11 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:32:11 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:32:11 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[20-Jul-2022 15:33:56 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:33:56 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:33:56 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94
+[20-Jul-2022 15:34:03 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:34:03 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:34:03 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/profile.php on line 67
+[20-Jul-2022 15:34:06 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-top.php on line 33
+[20-Jul-2022 15:34:06 America/Sao_Paulo] PHP Notice:  Trying to get property 'status' of non-object in /home/siteiptv/gestorlite.com/cliente/inc/nav-sidebar.php on line 30
+[20-Jul-2022 15:34:06 America/Sao_Paulo] PHP Notice:  Undefined index: vencimento in /home/siteiptv/gestorlite.com/cliente/pages/home.php on line 94

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc><?=SET_URL_PRODUCTION?>/</loc>
+  <lastmod>2021-03-31T18:26:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc><?=SET_URL_PRODUCTION?>/contato</loc>
+  <lastmod>2021-03-31T18:26:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc><?=SET_URL_PRODUCTION?>/login/</loc>
+  <lastmod>2021-03-31T18:26:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc><?=SET_URL_PRODUCTION?>/login/create</loc>
+  <lastmod>2021-03-31T18:26:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc><?=SET_URL_PRODUCTION?>/faq?wpp&amp;text=Gostaria%20de%20adquirir%20o%20plano%20de%201%20ano%20do%20gestor%20lite</loc>
+  <lastmod>2021-03-31T18:26:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc><?=SET_URL_PRODUCTION?>/termos/termos-gestor.pdf</loc>
+  <lastmod>2020-01-24T03:06:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc><?=SET_URL_PRODUCTION?>/faq</loc>
+  <lastmod>2021-03-31T18:26:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc><?=SET_URL_PRODUCTION?>/faq?contato</loc>
+  <lastmod>2021-03-31T18:26:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc><?=SET_URL_PRODUCTION?>/faq?wpp&amp;text=</loc>
+  <lastmod>2021-03-31T18:26:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

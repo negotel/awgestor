@@ -1,0 +1,283 @@
+body,html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font: 400 14px Arial;
+}
+
+.left{
+  float: left;
+  height: 100vh;
+  width: 37%;
+}
+
+.right{
+  margin: 0 auto;
+  float: center;
+  height: 200px;
+  width: 63%;
+}
+
+.right > *{
+  float:right;
+}
+
+.personal{
+  height: 50px;
+  width: 100%;
+  background-color: #eee;
+  border-right: .2px solid #ddd;
+  display: inline-block;
+}
+
+.personal *{
+  display: inline-block;
+}
+
+.search{
+  height: 20px;
+  width: 100%;
+}
+
+.thumbnail{
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-image: url(<?=SET_URL_PRODUCTION?>/painel/img/PROFILE_BOT.svg);
+  background-size: cover;
+}
+
+.thumbnail:hover{
+  cursor:pointer;
+}
+
+.edit *{
+  color: #555;
+  float: right;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.edit *:hover{
+  cursor: pointer;
+}
+
+.menu {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 250;
+}
+
+.new{
+  margin-top: 8px;
+  font-family: times;
+}
+
+.status{
+  margin-top: 4px;
+}
+
+.edit{
+  float: right;
+}
+
+.left .search{
+  width: 100%;
+  background-color: rgb(250,250,250);
+  margin-top: -4px;
+  padding-top: 5px;
+  height: 32px;
+}
+
+.search input{
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: .4px solid lightgrey;
+  padding: 5px;
+  width: calc(100% - 55px);
+  background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png') no-repeat 7px 2px;
+  background-size: 20px 20px;
+  padding-left: 30px;
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.search input:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+
+.recent{
+  overflow: auto;
+  width: 100%;
+  height: calc(100vh - 87px);
+}
+
+.chats{
+  list-style:none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.chats li{
+  border-top: 1px solid lightgrey;
+  height: 50px;
+  width: 100%;
+}
+
+.chats li > *{
+  display: inline-block;
+}
+
+.chats li .details{
+  font: 400 14px Arial;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: calc(100% - 55px);
+}
+
+.name{
+  display: block;
+}
+.time{
+  float: right;
+  margin-top: -15px;
+  font-size: 10px;
+  color: grey;
+}
+
+.details .message{
+  color: grey;
+}
+
+.info{
+  width: calc(100% - 0.1px);
+  height: 50px;
+  background-color: #eee;
+}
+
+.info .chatname{
+  float: left;
+  margin-top: 17px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.info .edit{
+  float: right;
+  height: 100%;
+  display: inline-block;
+}
+
+.info .edit *{
+  display: inline-block;
+}
+
+
+.info .searchchat{
+  width: 30px;
+  height: 30px;
+  border: 4px solid black;
+  display:inline-block;
+  border-radius: 50%;
+  margin-top: 6px;
+  transform: scale(.3);
+}
+
+.info .searchchat::before{
+  content: '';
+  height: 30px;
+  width: 4px;
+  margin-top: 21px;
+  margin-left: -9px;
+  display:inline-block;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.attachment{
+ background-image: url('https://image.flaticon.com/icons/svg/55/55957.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  width: 20px;
+  height: 30px;
+  margin-top: 12px;
+  transform: rotate(-90deg);
+}
+
+.chat{
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  background-size: 500px;
+  background-repeat: repeat-x;
+  overflow: auto;
+  width: 100%;
+  max-height: 300px;
+
+}
+
+.right .send{
+  height: 50px;
+  width: 100%;
+  background-color: #eee;
+  display: inline-block;
+}
+
+.right .send > *{
+  display: inline-block;
+}
+.recebe {
+  min-width: 162px;
+  background-color: #fff;
+  display: block;
+  padding: 18px;
+  float: left;
+  border-radius:10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.chat-msg{
+  width: 100%;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.envia{
+  float: right;
+  display: block;
+  min-width: 200px;
+  margin-top: 22px;
+  background-color: #7922ff;
+  padding: 18px;
+  border-radius: 10px;
+  color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.send input{
+  margin-top: 7px;
+  height: 37px;
+  width: calc(100% - 136px);
+  border-radius: 5px;
+  border: none;
+  padding: 5px 14px;
+  padding-left: 18px;
+  margin-left: 14px;
+}
+
+.send input:focus{
+  outline: none;
+}
+
+.emoji,.mic,.sendmessage{
+  width: 50px;
+  height: 30px;
+  filter: invert;
+}
