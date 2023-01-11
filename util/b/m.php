@@ -38,16 +38,8 @@ if (isset($_REQUEST['key'])) {
         if ($res) {
             echo '{"replies":[{"message":"' . str_replace('<br />', '\n', nl2br($res)) . '"}]}';
         } else {
+            echo '{"replies":[{"message":"' . str_replace('<br />', '\n', nl2br("Hum...🤔 \n Não consegui entender o que você falou, tenta novamente, por favor!")) . '"}]}';;
             $reply->removeSession($num);
-
-            $messagePadrao = [
-                "replies" => [
-                    "message" => "Hum...🤔\n
-                                Não consegui entender o que você falou, tenta novamente, por favor!"
-                ]
-            ];
-
-            echo json_encode($messagePadrao);
         }
 
     } else {
