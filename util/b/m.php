@@ -36,7 +36,7 @@ if (isset($_REQUEST['key'])) {
         $res = $reply->getReply($key, $msg, $num);
 
         if ($res) {
-            echo '{"replies":[{"message":"' . str_replace('<br />', '\n', nl2br($res)) . '"}]}';
+            echo '{"replies":[{"message":"' . str_replace('<br />', '\n', nl2br($res.' aqui 1')) . '"}]}';
         } else {
             $reply->removeSession($num);
         }
@@ -57,7 +57,7 @@ if (isset($_REQUEST['key'])) {
             $res = $reply->getReply($key, $msg, $num);
 
             if ($res) {
-                echo '{"reply":"' . $res . '"}';
+                echo '{"reply":"' . $res.' aqui 2' . '"}';
             } else {
                 $reply->removeSession($num);
             }
