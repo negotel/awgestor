@@ -36,9 +36,18 @@ if (isset($_REQUEST['key'])) {
         $res = $reply->getReply($key, $msg, $num);
 
         if ($res) {
-            echo '{"replies":[{"message":"' . str_replace('<br />', '\n', nl2br($res.' aqui 1')) . '"}]}';
+            echo '{"replies":[{"message":"' . str_replace('<br />', '\n', nl2br($res)) . '"}]}';
         } else {
             $reply->removeSession($num);
+
+            $messagePadrao = [
+                "replies" => [
+                    "message" => "Hum...🤔\n
+                                Não consegui entender o que você falou, tenta novamente, por favor!"
+                ]
+            ];
+
+            echo
         }
 
     } else {
@@ -57,7 +66,7 @@ if (isset($_REQUEST['key'])) {
             $res = $reply->getReply($key, $msg, $num);
 
             if ($res) {
-                echo '{"reply":"' . $res.' aqui 2' . '"}';
+                echo '{"reply":"' . $res . '"}';
             } else {
                 $reply->removeSession($num);
             }
