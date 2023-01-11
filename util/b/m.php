@@ -47,7 +47,7 @@ if (isset($_REQUEST['key'])) {
                 ]
             ];
 
-            echo
+            echo json_encode($messagePadrao);
         }
 
     } else {
