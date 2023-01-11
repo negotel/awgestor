@@ -2,7 +2,7 @@
 
   @session_start();
   set_time_limit(3000);
-
+require_once "../config/settings.php";
   require_once '../class/Conn.class.php';
   require_once '../class/User.class.php';
   require_once '../class/Clientes.class.php';

@@ -2,7 +2,7 @@
 <?php
 
   @session_start();
-
+require_once "../config/settings.php";
   if(isset($_SESSION['SESSION_USER']) && isset($_POST)){
 
     require_once '../class/Conn.class.php';

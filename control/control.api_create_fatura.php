@@ -5,7 +5,7 @@
     
 
  if(isset($_POST['id_plano'])){
-     
+     require_once "../config/settings.php";
 
      if($_POST['id_plano'] != "" && $_POST['id_cliente'] != ""){
          

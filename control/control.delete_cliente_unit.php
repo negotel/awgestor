@@ -1,6 +1,6 @@
 <?php
   @session_start();
-
+require_once "../config/settings.php";
    if(isset($_SESSION['SESSION_USER'])){
 
      $_SESSION['INFO'] = "";

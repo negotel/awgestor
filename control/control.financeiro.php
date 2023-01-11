@@ -3,7 +3,7 @@
  @session_start();
 
  if(isset($_SESSION['SESSION_USER'])){
-     
+   require_once "../config/settings.php";
       require_once '../class/Conn.class.php';
       require_once '../class/User.class.php';
 

@@ -1,7 +1,7 @@
 <?php
 
   @session_start();
-
+require_once "../config/settings.php";
   if(isset($_SESSION['SESSION_USER']) && isset($_POST)){
 
        if(isset($_POST['key'])){

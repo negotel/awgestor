@@ -2,7 +2,7 @@
 
 
    @session_start();
-
+require_once "../config/settings.php";
    $json = new stdClass();
 
    if(isset($_SESSION['SESSION_USER'])){

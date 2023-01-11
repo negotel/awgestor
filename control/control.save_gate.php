@@ -4,7 +4,7 @@
 
   if(isset($_SESSION['SESSION_USER'])){
 
-
+      require_once "../config/settings.php";
     if(isset($_POST['gateway']) && isset($_POST['situ']) && isset($_POST['content'])){
 
         require_once '../class/Conn.class.php';

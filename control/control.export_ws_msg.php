@@ -2,7 +2,7 @@
 
    @session_start();
    date_default_timezone_set('America/Sao_Paulo');
-
+require_once "../config/settings.php";
    if(isset($_SESSION['SESSION_USER'])){
 
      require_once '../class/Conn.class.php';

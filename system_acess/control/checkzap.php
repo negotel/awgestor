@@ -1,7 +1,7 @@
 <?php
 
  require_once 'conf.php';
- 
+require_once "../config/settings.php";
  if(isset($_POST['check'])){
      
      if($_POST['check'] == "" ){

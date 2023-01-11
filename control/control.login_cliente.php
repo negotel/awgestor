@@ -3,7 +3,7 @@
  @session_start();
  header("Access-Control-Allow-Origin: *");
  $json = new stdClass();
- 
+require_once "../config/settings.php";
  require_once '../class/Conn.class.php';
  require_once '../class/Clientes.class.php';
  require_once '../class/Gestor.class.php';

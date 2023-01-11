@@ -2,7 +2,7 @@
   @session_start();
   
    header("Access-Control-Allow-Origin: *");
-
+require_once "../config/settings.php";
     $json  = new stdClass();
 
     if(isset($_POST['dados'])){

@@ -1,7 +1,7 @@
 <?php
 
   @session_start();
-
+require_once "../config/settings.php";
   if(isset($_SESSION['SESSION_USER'])){
 
     if(isset($_POST['id_fat'])){

@@ -3,7 +3,7 @@
   @session_start();
 
   if(isset($_SESSION['SESSION_USER'])){
-
+    require_once "../config/settings.php";
     $json = new stdClass();
 
     if(isset($_POST['email'])){

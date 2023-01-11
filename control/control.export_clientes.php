@@ -4,7 +4,7 @@
   header('Content-Type: application/json');
 
   $json = new stdClass();
-
+require_once "../config/settings.php";
 
   if(isset($_SESSION['SESSION_USER'])){
 

@@ -1,7 +1,7 @@
 <?php
 
 @session_start();
-
+require_once "../config/settings.php";
 date_default_timezone_set('America/Sao_Paulo');
 require_once "../config/settings.php";
 

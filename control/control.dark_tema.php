@@ -1,7 +1,7 @@
 <?php
 
   @session_start();
-
+require_once "../config/settings.php";
   if(isset($_POST['request'])){
 
     if(isset($_SESSION['DARK'])){
